@@ -1,5 +1,18 @@
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.wave-section {
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 120px 0 0 0;
+}
+
+.wave-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.wave-wrapper svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
