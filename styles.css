@@ -1,3 +1,19 @@
+.navbar {
+  background-color: white; /* optional */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #113350 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #0d2740 !important; /* darker on hover */
+}
+.logo {
+  height: 50px;
+  width: auto;
+}
 .wave-section {
   position: relative;
   background-color: #f8f9fa;
