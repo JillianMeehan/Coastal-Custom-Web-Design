@@ -2,102 +2,320 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Coastal Custom Web Design | Web Designer South Carolina</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Coastal Custom Web Design</title>
+
+    <!-- Bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="images/ccwd-logo-transparent.png"
-            alt="My Logo"
-            class="logo"
-        /></a>
+    <!-- NAVBAR -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/ccwd-logo-transparent.png" alt="Logo" height="70" />
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#process">Process</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Let's Talk</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="wave-section">
-      <div class="container text-center py-5 position-relative">
-        <h2>What We Do</h2>
-        <p class="text-muted">We make the process simple and stress-free.</p>
-      </div>
 
-      <div class="wave-wrapper">
-        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <!-- Back Light Wave -->
-          <path
-            fill="#dfe8ef"
-            fill-opacity="1"
-            d="M0,224L60,218.7C120,213,240,203,360,192C480,181,600,171,720,176C840,181,960,203,1080,202.7C1200,203,1320,181,1380,170.7L1440,160V320H0Z"
-          ></path>
+    <!-- HERO SECTION -->
 
-          <!-- Middle Wave -->
-          <path
-            fill="#c9d8e6"
-            fill-opacity="0.9"
-            d="M0,256L60,245.3C120,235,240,213,360,208C480,203,600,213,720,213.3C840,213,960,203,1080,186.7C1200,171,1320,149,1380,138.7L1440,128V320H0Z"
-          ></path>
+    <section class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="hero-subtitle">MODERN WEBSITES FOR SMALL BUSINESSES</p>
 
-          <!-- Front Wave -->
-          <path
-            fill="#113350"
-            fill-opacity="0.08"
-            d="M0,288L60,277.3C120,267,240,245,360,234.7C480,224,600,224,720,229.3C840,235,960,245,1080,240C1200,235,1320,213,1380,202.7L1440,192V320H0Z"
-          ></path>
-        </svg>
+            <h1 class="hero-title mb-4">
+              Professional websites without the tech overwhelm.
+            </h1>
+
+            <p class="hero-text mb-4">
+              Coastal Custom Web Design helps small businesses create a polished
+              online presence with affordable pricing, payment plans, and
+              ongoing support.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#contact" class="btn btn-light btn-lg">Get Started</a>
+
+              <a href="#services" class="btn btn-outline-light btn-lg">
+                Explore Services
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            <img
+              src="images/ccwd-hero.png"
+              alt="Hair salon website displayed on laptop"
+              class="hero-image img-fluid"
+            />
+          </div>
+        </div>
       </div>
     </section>
-    <div class="container mt-5">
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-3">
-          <div class="border border-2 rounded-3 p-4 text-center">Box 1</div>
+
+    <!-- SERVICES -->
+
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-subtitle">WHAT WE OFFER</p>
+          <h2 class="section-title">Professional websites made simple.</h2>
         </div>
 
-        <div class="col-md-3">
-          <div class="border border-2 rounded-3 p-4 text-center">Box 2</div>
-        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card p-4 h-100">
+              <i class="bi bi-window service-icon"></i>
+              <h4 class="mt-4">Custom Website Design</h4>
+              <p>
+                Modern, mobile-friendly websites built specifically for your
+                business.
+              </p>
+            </div>
+          </div>
 
-        <div class="col-md-3">
-          <div class="border border-2 rounded-3 p-4 text-center">Box 3</div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card p-4 h-100">
+              <i class="bi bi-graph-up-arrow service-icon"></i>
+              <h4 class="mt-4">Analytics & Tracking</h4>
+              <p>
+                Monthly performance tracking so you can understand how your
+                website is performing.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card p-4 h-100">
+              <i class="bi bi-tools service-icon"></i>
+              <h4 class="mt-4">Maintenance Plans</h4>
+              <p>
+                Affordable support packages for updates and ongoing
+                improvements.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card p-4 h-100">
+              <i class="bi bi-chat-dots service-icon"></i>
+              <h4 class="mt-4">Simple Communication</h4>
+              <p>
+                No confusing tech jargon — just honest guidance and support.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- PROCESS -->
+
+    <section id="process" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-subtitle">SIMPLE PROCESS</p>
+          <h2 class="section-title">How it works</h2>
+        </div>
+
+        <div class="row g-4 text-center">
+          <div class="col-md-3">
+            <div class="process-card p-4">
+              <h1>01</h1>
+              <h5>Discovery</h5>
+              <p>We discuss your goals and vision.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="process-card p-4">
+              <h1>02</h1>
+              <h5>Design</h5>
+              <p>Your custom website is professionally designed.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="process-card p-4">
+              <h1>03</h1>
+              <h5>Launch</h5>
+              <p>Your site goes live optimized and mobile-ready.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="process-card p-4">
+              <h1>04</h1>
+              <h5>Support</h5>
+              <p>Maintenance and analytics support available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+
+    <section id="pricing" class="section-padding pricing-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-subtitle">AFFORDABLE OPTIONS</p>
+          <h2 class="section-title">Flexible pricing for growing businesses</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4">
+            <div class="pricing-card p-5 text-center">
+              <h4>Starter</h4>
+              <h2 class="my-4">$499</h2>
+
+              <p>Simple business website</p>
+              <p>Mobile responsive</p>
+              <p>Basic SEO setup</p>
+              <p>Contact form</p>
+
+              <button class="btn custom-btn mt-4">Get Started</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pricing-card featured p-5 text-center">
+              <h4>Growth</h4>
+              <h2 class="my-4">$999</h2>
+
+              <p>Custom multi-section website</p>
+              <p>Analytics tracking</p>
+              <p>Modern animations</p>
+              <p>Payment plan options</p>
+
+              <button class="btn custom-btn mt-4">Most Popular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="section-padding bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card p-5">
+              <div class="text-center mb-4">
+                <p class="section-subtitle">LET'S BUILD SOMETHING GREAT</p>
+                <h2 class="section-title">
+                  Ready to elevate your business online?
+                </h2>
+              </div>
+
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <textarea
+                      rows="5"
+                      class="form-control"
+                      placeholder="Tell me about your business..."
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button class="btn custom-btn btn-lg">Send Inquiry</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer-section text-center py-4">
+      <div class="container">
+        <p class="mb-0">
+          © 2026 Coastal Custom Web Design | Modern websites for small
+          businesses
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
