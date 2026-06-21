@@ -479,6 +479,8 @@ footer p {
   }
 
   .hero-logo {
+    max-width: 450px;
+    width: 100%;
     margin-top: 50px;
   }
 }
